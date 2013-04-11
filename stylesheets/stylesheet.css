@@ -350,7 +350,7 @@ dl dd {
 }
 
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background-color: black;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -365,6 +365,13 @@ footer a:hover {
   color: #444;
 }
 
+.footer-region {
+  margin-left: 30px;
+  width: 35%;
+  float:left;
+  display: block;
+}
+
 /* MISC */
 .clearfix:after {
   clear: both;
@@ -377,6 +384,18 @@ footer a:hover {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+.project-box {
+  width: 40%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 20px;
+  float: left;
+}
+
+.clearboth {
+  clear:both;
+}
 
 /* #Media Queries
 ================================================== */
@@ -410,6 +429,10 @@ footer a:hover {
     content: none;
     padding-right: 0;
     margin-left: 0;
+  }
+
+  .project-box {
+    padding: 0px;
   }
 }
 
@@ -478,6 +501,19 @@ footer a:hover {
     content: none;
     padding-right: 0;
     margin-left: 0;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .project-box {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .footer-region {
+    float:none;
   }
 }
 
